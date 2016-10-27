@@ -1,0 +1,37 @@
+.friends {
+    min-height: 905px;
+    border-top: 1px solid transparent;
+    h5 {
+        @include pr-bld(25px, 25px);
+        margin: 45px 0 10px;
+        text-align: center;
+        color: $text;
+    }
+    p {
+        @include pr-bld(20px, 20px);
+        text-align: center;
+        color: #9e9e9e;
+    }
+    &__list {
+        li {
+            @include list-inl(30px 95px 40px 0);
+            width: 265px;
+            vertical-align: top;
+            text-align: center;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            a {
+                @include pr-bld(20px, 20px);
+                display: block;
+                margin-bottom: 10px;
+                color: #52b4fe;
+            }
+        }
+    }
+    &__id {
+        @include pr-rg(20px, 20px);
+        overflow: hidden;
+        color: #9e9e9e;
+    }
+}

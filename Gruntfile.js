@@ -159,9 +159,9 @@ module.exports = function (grunt) {
         },
         sprite:{
       all: {
-        src: 'img/sprites/*.png',
-        dest: 'img/sprites/social.png',
-        destCss: 'css/social.css',
+        src: 'img/nav-ic/*.png',
+        dest: 'img/nav-ic/nav.png',
+        destCss: 'css/nav.css',
         padding: 20,
         algorithm: 'top-down'
       }
