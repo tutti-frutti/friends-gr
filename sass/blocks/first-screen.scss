@@ -1,0 +1,25 @@
+.first-screen {
+    height: 730px;
+    padding-top: 30px;
+    background: url('../img/first-scr-2.jpg') 0 0 no-repeat;
+    background-size: cover;
+    &__welcome {
+        @include pr-rg(25px, 25px);
+        color: #fff;
+    }
+    &__title {
+        margin: 32% auto 0;
+        width: 245px;
+        text-align: center;
+    }
+    h1 {
+        @include pr-bld(60px, 67px);
+        color: #fff;
+        text-transform: uppercase;
+        span {
+            @include pr-rg(60px, 60px);
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}

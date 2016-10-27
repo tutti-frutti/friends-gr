@@ -1,9 +1,16 @@
-//@import "mixins.scss";
-//@import "variables.scss";
+@import "mixins.scss";
+@import "variables.scss";
 
-//@import "blocks/...";
+@import "blocks/first-screen.scss";
+@import "blocks/advantages.scss";
+@import "blocks/video.scss";
+@import "blocks/registration.scss";
+@import "blocks/form.scss";
+@import "blocks/about-us.scss";
+@import "blocks/footer.scss";
+@import "blocks/navigation.scss";
 
 @import "global/scaffolding.scss";
 //@import "global/fonts.scss";
-//@import "global/btn.scss";
+@import "global/btn.scss";
 //@import "global/input.scss";

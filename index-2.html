@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/friends-group.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
     <title>Friends Group</title>
   </head>
@@ -13,56 +13,63 @@
   
   <main>
       <section class="first-screen">
-          <span class="first-screen__welcome">Добро пожаловать</span>
-          <a class="first-screen__enter">Войти</a>
-          <h1><span>Friends group</span></h1>
-      </section><!--./first-screen-->
+            <div class="center">
+                <span class="first-screen__welcome">Добро пожаловать</span>
+                <a href="#" class="btn btn__enter first-screen__enter">Войти</a>
+                <div class="first-screen__title">
+                    <h1>Friends <span>group</span></h1>
+                </div><!--./title-->
+            </div>
+        </section><!--./first-screen-->
       
       <section class="navigation">
-          <div class="navigation__user">
-              <div class="navigation__user-logo"><img src="" alt="user-logo"></div>
-              <div class="navigation__user-name"><span>Василий</span></div>
-          </div><!--./navigation__user-->
-          <div class="navigation__nav">
+          <div class="navigation__nav center">
               <ul class="navigation__list">
-                  <li>Главная</li>
-                  <li>Кабинет</li>
-                  <li>Сообщения
+                  <li>
+                     <div style="background-image: url('img/forest.jpg')" class="navigation__user-logo">
+                     </div><!--user-logo-->
+                  </li>
+                  <li class="navigation__user-name"><a href="#">Василий</a></li>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Кабинет</a></li>
+                  <li><a href="#">Сообщения</a>
                       <span class="navigation__note">3</span>
                   </li>
-                  <li>Друзья
+                  <li><a href="#">Друзья</a>
                       <span class="navigation__note">5</span>
                   </li>
-                  <li>Настройки</li>
-                  <li>enter</li>
+                  <li><a href="#">Настройки</a></li>
+                  <li class="navigation__enter"></li>
               </ul>
           </div><!--./navigation__nav-->
-      </section>
+      </section><!--./navigation-->
       
-      <section class="advantages">
-          <ul class="advantages__list">
-              <li>
-                  <div class="advantages__ic-1"></div>
-                  <span class="advantages__descr">Быстрая и удобная регистрация</span>
-              </li>
-              <li>
-                  <div class="advantages__ic-2"></div>
-                  <span class="advantages__descr">Быстрый ввод ввыод денег</span>
-              </li>
-              <li>
-                  <div class="advantages__ic-3"></div>
-                  <span class="advantages__descr">Не ошраниченное колличество людей</span>
-              </li>
-              <li>
-                  <div class="advantages__ic-4"></div>
-                  <span class="advantages__descr">Прозрачность доходов</span>
-              </li>
-          </ul>
-      </section><!--./advantages-->
+      <section class="advantages center">
+            <ul class="advantages__list">
+                <li>
+                    <div class="advantages__ic-1"></div>
+                    <span class="advantages__descr">Быстрая и удобная регистрация</span>
+                </li>
+                <li>
+                    <div class="advantages__ic-2"></div>
+                    <span class="advantages__descr">Быстрый ввод ввыод денег</span>
+                </li>
+                <li>
+                    <div class="advantages__ic-3"></div>
+                    <span class="advantages__descr">Не ограниченное колличество людей</span>
+                </li>
+                <li>
+                    <div class="advantages__ic-4"></div>
+                    <span class="advantages__descr">Прозрачность доходов</span>
+                </li>
+            </ul>
+        </section><!--./advantages-->
       
       <section class="video">
-          <a href="#" class="video__present">Видео презентация</a>
-      </section><!--./video-->
+           <div class="video__wrapper">
+            <a href="#" class="video__present">Видео презентация</a>
+           </div><!--./video__wrapper-->
+        </section><!--./video-->
       
       <section class="friends">
           <h5>Ваши друзья</h5>
@@ -100,43 +107,6 @@
               </li>
           </ul>
       </section><!--./friends-->
-      
-      <section class="registration">
-          <div class="registration__left">
-              <div class="registration__left-wrapper">
-                  <span class="registration__header">Регистрация</span>
-                  <img src="" alt="registr">
-                  <span class="registration__invite">Регистрация</span>
-                  <a href="#" class="registration__person">Василий Ефремов</a>
-                  <span class="registration__id">ID - 1234567231</span>
-              </div>
-          </div><!--./registration__left-->
-          <div class="registration__right">
-              <div class="registration__right-wrapper">
-                  <div class="registration__form">
-                      <ul class="registration__social">
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                      </ul>
-                      <span>или</span>
-                      <form action="" class="form">
-                          <div class="form__inner">
-                              <input type="text" name="name" placeholder="Имя">
-                              <input type="text" name="surname" placeholder="Ваша фамилия">
-                              <input type="text" name="id" placeholder="ID - 1234567890">
-                              <input type="text" name="email-tel" placeholder="E-mail или телефон">
-                              <input type="password" name="password" id="">
-                          </div>
-                          <span class="form__agree">Нажимая кнопку &Prime;Регистрация&Prime;, вы соглашаетесь с <a href="#" class="form__rules">Правилами сайта</a></span>
-                          <button class="btn btn-form" type="submit">Регистрация</button>
-                      </form>
-                  </div><!--./registration__form-->
-              </div>
-          </div><!--./registration__right-->
-      </section><!--./registration-->
       
       <section class="about-us">
           <h3>Пара слов о нас</h3>

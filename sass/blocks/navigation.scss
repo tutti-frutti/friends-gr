@@ -1,0 +1,57 @@
+.navigation {
+    position: relative;
+    height: 57px;
+    line-height: 57px;
+    border-bottom: 3px solid #2c76ba;
+    background: linear-gradient(to bottom, #52b3fe, #3da2fe);
+    box-shadow: 0 4px 15px 0 #d1d1d1;
+    z-index: 1;
+    &__list {
+        position: relative;
+        li {
+            @include list-inl(0);
+            line-height: normal;
+            vertical-align: middle;
+        }
+    }
+    &__user-logo {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: -17px;
+        border-radius: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 23px;
+            bottom: -3px;
+            left: 6px;
+            background: url('../img/user-logo-bottom2.png') 0 0 no-repeat;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 97px;
+            height: 27px;
+            top: -4px;
+            left: -2px;
+            background: url('../img/user-logo-top-3.png') 0 0 no-repeat;
+        }
+    }
+    &__user-name {
+        padding: 2px 10%;
+        border-right: 1px solid #fff;
+        a {
+            @include pr-bld(14px, 24px);
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 body {
     font-family: 'Proxima Nova Rg';
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -16,7 +18,13 @@ a {
 }
 
 img {
-//    max-width: 100%;
+    max-width: 100%;
+}
+
+.center {
+    width: 1140px;
+    
+    margin: 0 auto;
 }
 
 * {
@@ -35,4 +43,67 @@ img {
 	src: url('../fonts/ProximaNova-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+
+// sprites social
+
+.icon-bl-fb {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px 0px;
+  width: 41px;
+  height: 42px;
+}
+.icon-bl-in {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -62px;
+  width: 41px;
+  height: 42px;
+}
+.icon-bl-ok {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -124px;
+  width: 41px;
+  height: 42px;
+}
+.icon-bl-tw {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -186px;
+  width: 41px;
+  height: 42px;
+}
+.icon-bl-vk {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -248px;
+  width: 41px;
+  height: 42px;
+}
+.icon-c-fb {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -310px;
+  width: 41px;
+  height: 42px;
+}
+.icon-c-in {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -372px;
+  width: 41px;
+  height: 42px;
+}
+.icon-c-ok {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -434px;
+  width: 41px;
+  height: 42px;
+}
+.icon-c-tw {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -496px;
+  width: 41px;
+  height: 42px;
+}
+.icon-c-vk {
+  background-image: url(../img/sprites/social.png);
+  background-position: 0px -558px;
+  width: 41px;
+  height: 42px;
 }

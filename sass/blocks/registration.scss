@@ -1,0 +1,259 @@
+.registration {
+    min-height: 552px;
+    line-height: 552px;
+    text-align: center;
+    &__left {
+        display: inline-block;
+        width: 26%;
+        margin-right: 70px;
+        line-height: normal;
+        vertical-align: middle;
+        &-wrapper {
+            text-align: center;
+        }
+    }
+    &__header {
+        @include pr-bld(30px, 30px);
+        display: block;
+        margin-bottom: 10px;
+        color: #3991db;
+    }
+    &__invite {
+        @include pr-bld(25px, 25px);
+        display: block;
+        margin: 20px 0;
+        color: $text;
+    }
+    &__person {
+        @include pr-rg(25px, 25px);
+        display: block;
+        margin-bottom: 10px;
+        color: #3991db;
+    }
+    &__id {
+        @include pr-rg(20px, 20px);
+        color: $text;
+    }
+    
+    // right block with form
+    &__right {
+        display: inline-block;
+        width: 33%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__form {
+        background: #e1f2ff;
+        border: 1px solid #3991db;
+        border-radius: 5px;
+        text-align: center;
+    }
+    &__or {
+        @include pr-rg(14px, 14px);
+        position: relative;
+        padding: 0 10px;
+        background: #e1f2ff;
+        color: #000;
+        z-index: 5;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 10px;
+            left: -115px;
+            width: 280px;
+            height: 1px;
+            background: #3991db;
+            z-index: -1;
+        }
+    }
+    &__social {
+        text-align: center;
+        margin-top: 20px;
+        li {
+            @include list-inl(0 5px);
+            a {
+                display: block;
+            }
+        }
+    }
+    &__fb {
+        position: relative;
+        display: inline;
+        background-image: url(../img/sprites/social.png);
+        background-position: 0px 0px;
+        width: 41px;
+        height: 42px;
+        &:hover {
+            background-position: 0px -310px;
+            &::after {
+                @include pr-rg(14px, 23px);
+                position: absolute;
+                content: attr(data-title);
+                padding: 10px 5px 0;
+                width: 70px;
+                height: 33px;
+                left: -20px;
+                bottom: -58px;
+                border: 2px solid #4aaffe;
+                border-radius: 5px;
+                background: #fff;
+                color: #000;
+                z-index: 98;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 11px;
+                bottom: -14px;
+                width: 24px;
+                height: 13px;
+                background: url('../img/arr-tooltip.png') 0 0 no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+    &__vk {
+        position: relative;
+        display: inline;
+        background-image: url(../img/sprites/social.png);
+        background-position: 0px -248px;
+        width: 41px;
+        height: 42px;
+        &:hover {
+            background-position: 0px -558px;
+            &::after {
+                @include pr-rg(14px, 24px);
+                position: absolute;
+                content: attr(data-title);
+                padding: 10px 5px 0;
+                width: 70px;
+                height: 33px;
+                left: -20px;
+                bottom: -58px;
+                border: 2px solid #4aaffe;
+                border-radius: 5px;
+                background: #fff;
+                color: #000;
+                z-index: 98;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 11px;
+                bottom: -14px;
+                width: 24px;
+                height: 13px;
+                background: url('../img/arr-tooltip.png') 0 0 no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+    &__ok {
+        position: relative;
+        display: inline;
+        background-image: url(../img/sprites/social.png);
+        background-position: 0px -124px;
+        width: 41px;
+        height: 42px;
+        &:hover {
+            background-position: 0px -434px;
+            &::after {
+                @include pr-rg(14px, 24px);
+                position: absolute;
+                content: attr(data-title);
+                padding: 10px 5px 0;
+                width: 100px;
+                height: 33px;
+                left: -35px;
+                bottom: -58px;
+                border: 2px solid #4aaffe;
+                border-radius: 5px;
+                background: #fff;
+                color: #000;
+                z-index: 98;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 11px;
+                bottom: -14px;
+                width: 24px;
+                height: 13px;
+                background: url('../img/arr-tooltip.png') 0 0 no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+    &__tw {
+        position: relative;
+        display: inline;
+        background-image: url(../img/sprites/social.png);
+        background-position: 0px -186px;
+        width: 41px;
+        height: 42px;
+        &:hover {
+            background-position: 0px -496px;
+            &::after {
+                @include pr-rg(14px, 24px);
+                position: absolute;
+                content: attr(data-title);
+                padding: 10px 5px 0;
+                width: 70px;
+                height: 33px;
+                left: -20px;
+                bottom: -58px;
+                border: 2px solid #4aaffe;
+                border-radius: 5px;
+                background: #fff;
+                color: #000;
+                z-index: 98;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 11px;
+                bottom: -14px;
+                width: 24px;
+                height: 13px;
+                background: url('../img/arr-tooltip.png') 0 0 no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+    &__inst {
+        position: relative;
+        display: inline;
+        background-image: url(../img/sprites/social.png);
+        background-position: 0px -62px;
+        width: 41px;
+        height: 42px;
+        &:hover {
+            background-position: 0px -372px;
+            &::after {
+                @include pr-rg(14px, 24px);
+                position: absolute;
+                content: attr(data-title);
+                padding: 10px 5px 0;
+                width: 70px;
+                height: 33px;
+                left: -20px;
+                bottom: -58px;
+                border: 2px solid #4aaffe;
+                border-radius: 5px;
+                background: #fff;
+                color: #000;
+                z-index: 98;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 11px;
+                bottom: -14px;
+                width: 24px;
+                height: 13px;
+                background: url('../img/arr-tooltip.png') 0 0 no-repeat;
+                z-index: 99;
+            }
+        }
+    }
+}

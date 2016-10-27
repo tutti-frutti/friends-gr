@@ -1,0 +1,21 @@
+@mixin list-inl($margin) {
+    display: inline-block;
+    list-style: none;
+    margin: $margin;
+}
+
+@mixin pr-bld($font-size, $line-height) {
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+
+@mixin pr-rg($font-size, $line-height) {
+font-family: 'PT Sans', sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: $font-size;
+line-height: $line-height;
+}

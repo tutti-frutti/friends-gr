@@ -1,0 +1,32 @@
+.btn {
+    @include pr-bld(14px, 37px);
+    display: inline-block;
+    height: 37px;
+    text-align: center;
+    border-bottom: 3px solid #276eb5;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px 0 #7b8892;
+    background-image: linear-gradient(to bottom, #4c9fe0, #2e81d3);
+    color: #fff;
+    &__enter {
+        float: right;
+        width: 142px;
+        background: url('../img/enter-ic.png') 18px 10px no-repeat,
+                          linear-gradient(to bottom, #4c9fe0, #2e81d3);
+        &:hover {
+            background: url('../img/enter-ic.png') 18px 10px no-repeat,
+                          linear-gradient(to bottom, #2e81d3, #4c9fe0);
+        }
+    }
+    &__form {
+        width: 295px;
+        margin: 10px 0 20px;
+        border: none;
+        cursor: pointer;
+        border-bottom: 3px solid #276eb5;
+        box-shadow: 0 1px 2px 0 #7b8892;
+        &:hover {
+            background-image: linear-gradient(to bottom, #2e81d3, #4c9fe0);
+        }
+    }
+}
