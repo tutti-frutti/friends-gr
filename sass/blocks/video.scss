@@ -1,26 +1,25 @@
 .video {
+    position: relative;
     height: 733px;
     border-top: 1px solid transparent;
-    background-image: url('../img/video-2.jpg');
+    overflow: hidden;
+    background-image: url('../img/video-3.jpg');
     background-size: cover;
-    &__wrapper {
+    &__present {
+        @include pr-rg(40px,50px);
         position: relative;
-        width: 276px;
-        margin: 20% auto 0;
-        text-align: center;
+        display: block;
+        padding-top: 100px;
+        text-transform: uppercase;
+        color: #fff;
         &::before {
             position: absolute;
             content: '';
             width: 85px;
             height: 85px;
-            top: 120px;
-            left: 100px;
+            top: 210px;
+            left: 140px;
             background: url('../img/yt-ic.png') 0 0 no-repeat;
         }
-    }
-    &__present {
-        @include pr-rg(40px,50px);
-        text-transform: uppercase;
-        color: #fff;
     }
 }

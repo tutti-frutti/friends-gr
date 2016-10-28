@@ -1,19 +1,62 @@
 .first-screen {
+    position: relative;
     height: 730px;
     padding-top: 30px;
-    background: url('../img/first-scr-2.jpg') 0 0 no-repeat;
+    overflow: hidden;
+    background: url('../img/first-scr-3.jpg') 0 0 no-repeat;
     background-size: cover;
     &__welcome {
         @include pr-rg(25px, 25px);
+        position: relative;
         color: #fff;
+        z-index: 10;
     }
     &__title {
-        margin: 32% auto 0;
-        width: 245px;
+        position: absolute;
+//        margin: 12% auto 0;
+        width: 380px;
+        height: 380px;
+        left: 39%;
+        top: 160px;
         text-align: center;
+        border: 3px solid #fff;
+        border-radius: 100%;
+        background: rgba(64, 150, 222, .3);
+        z-index: 5;
+    }
+    &__bg-1 {
+        position: absolute;
+        width: 960px;
+        height: 960px;
+        left: 22%;
+        top: -80px;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, .1);
+        z-index: 4;
+    }
+    &__bg-2 {
+        position: absolute;
+        width: 1320px;
+        height: 1320px;
+        left: 10%;
+        bottom: -360px;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, .1);
+        z-index: 3;
+    }
+    &__bg-3 {
+        position: absolute;
+        width: 1662px;
+        height: 1662px;
+        left: 0%;
+        top: -450px;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, .1);
+        z-index: 2;
     }
     h1 {
         @include pr-bld(60px, 67px);
+        padding-top: 120px;
         color: #fff;
         text-transform: uppercase;
         span {
@@ -21,5 +64,9 @@
             color: #fff;
             text-transform: uppercase;
         }
+    }
+    &__enter {
+        position: relative;
+        z-index: 100;
     }
 }

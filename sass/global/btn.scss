@@ -11,6 +11,7 @@
     &__enter {
         float: right;
         width: 142px;
+        z-index: 100;
         background: url('../img/enter-ic.png') 18px 10px no-repeat,
                           linear-gradient(to bottom, #4c9fe0, #2e81d3);
         &:hover {
